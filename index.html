@@ -15,7 +15,7 @@
 
     <div class="d-flex align-items-center justify-content-center" style="height: 750px;">
         <form class="w-50 border boder-primary rounded">
-            <div class="rounded-top p-2" style="background-color: rgb(189, 191, 191);">
+            <div class="rounded-top p-2" style="background-color: rgb(239, 239, 239);">
                 <h2>Payment Form Example</h2>
             </div>
 
@@ -65,13 +65,30 @@
                         </div>
                         <!--TODO where do I put the id here?-->
                         <div class="mb-3">
-                            <label for="weAccept" class="form-label">First Name</label>
+                            <label for="weAccept" class="form-label">We accept:</label>
                             <div class="input-group">
-                                <div class="input-group-text">
+                                <div class="input-group-text gap-3 bg-secondary">
+                                    <div>
                                     <input class="form-check-input mt-0" type="radio" value=""
                                         aria-label="Radio button for following text input">
+                                        <i class="fa-brands fa-cc-mastercard fa-lg fa-inverse"></i>
+                                    </div>
+                                    <div>
+                                    <input class="form-check-input mt-0" type="radio" value=""
+                                        aria-label="Radio button for following text input">
+                                        <i class="fa-brands fa-cc-visa fa-lg fa-inverse"></i>
+                                    </div>
+                                    <div>
+                                    <input class="form-check-input mt-0" type="radio" value=""
+                                        aria-label="Radio button for following text input">
+                                        <i class="fa-brands fa-cc-diners-club fa-lg fa-inverse"></i>
+                                    </div>
+                                    <div>
+                                    <input class="form-check-input mt-0" type="radio" value=""
+                                        aria-label="Radio button for following text input">
+                                        <i class="fa-brands fa-cc-amex fa-lg fa-inverse"></i>
+                                    </div>
                                 </div>
-                                <input type="text" class="form-control" aria-label="Text input with radio button">
                             </div>
                         </div>
                     </div>
@@ -121,9 +138,11 @@
 
 
 
-            <div class="d-flex justify-content-end gap-2 rounded-bottom" style="background-color: rgb(189, 191, 191)" ;>
-                <button type="submit" class="btn btn-primary">Cancel</button>
-                <button type="submit" class="btn btn-primary">Submit</button>
+            <div class="d-flex justify-content-end gap-2 rounded-bottom" style="background-color: rgb(239, 239, 239);">
+                <div class="p-2">
+                    <button type="submit" class="btn btn-secondary">Cancel</button>
+                    <button type="submit" class="btn btn-primary">Send</button>
+                </div>
             </div>
         </form>
     </div>
