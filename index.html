@@ -33,13 +33,13 @@
                     <div class="col-4">
                         <div class="mb-3">
                             <label for="cardNumber" class="form-label">Card #</label>
-                            <input type="text" class="form-control" id="cardNumber" placeholder="XXXXXXXXXXXXXXX">
+                            <input type="text" class="form-control" id="cardNumber" placeholder="XXXXXXXXXXXXXXX" required="Required">
                         </div>
                     </div>
                     <div class="col-4">
                         <div class="mb-3">
                             <label for="cvcNumber" class="form-label">CVC #</label>
-                            <input type="text" class="form-control" id="cvcNumber" placeholder="0000">
+                            <input type="text" class="form-control" id="cvcNumber" placeholder="0000" required="Required">
                         </div>
                     </div>
                     <div class="col-4">
@@ -47,7 +47,7 @@
                             <label for="amount" class="form-label">Amount</label>
                             <div class="d-flex">
                                 <span class="pt-2">$</span>
-                                <input type="text" class="form-control" id="amount" placeholder="Amount">
+                                <input type="text" class="form-control" id="amount" placeholder="Amount" required="Required">
                             </div>
                         </div>
                     </div>
@@ -60,11 +60,11 @@
                     <div class="col-6">
                         <div class="mb-3">
                             <label for="firstName" class="form-label">First Name</label>
-                            <input type="text" class="form-control" id="firstName">
+                            <input type="text" class="form-control" id="firstName" required="Required">
                         </div>
                         <div class="mb-3">
                             <label for="city" class="form-label">City</label>
-                            <input type="text" class="form-control" id="city">
+                            <input type="text" class="form-control" id="city" required="Required">
                         </div>
                         <!--TODO where do I put the id here?-->
                         <div class="mb-3">
@@ -105,7 +105,7 @@
                     <div class="col-6">
                         <div class="mb-3">
                             <label for="lastName" class="form-label">Last Name</label>
-                            <input type="text" class="form-control" id="lastName">
+                            <input type="text" class="form-control" id="lastName" required="Required">
                         </div>
                         <div class="container">
                             <div class="row">
@@ -113,21 +113,19 @@
                                     <div class="mb-3">
                                         <label for="state" class="form-label">State</label>
                                         <div class="input-group mb-3">
-                                            <button class="btn btn-outline-secondary dropdown-toggle w-100 text-start"
-                                                type="button" data-bs-toggle="dropdown" aria-expanded="false"
-                                                id="state">Pick a State</button>
-                                            <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="#">London</a></li>
-                                                <li><a class="dropdown-item" href="#">Manchester</a></li>
-                                                <li><a class="dropdown-item" href="#">Nottingham</a></li>
-                                            </ul>
+                                            <select class="form-select" aria-label="Default select example" required>
+                                                <option selected>Select a State</option>
+                                                <option value="1">London</option>
+                                                <option value="2">Manchester</option>
+                                                <option value="3">Nottingham</option>
+                                              </select>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-6">
                                     <div class="mb-3">
                                         <label for="postalCode" class="form-label">Postal Code</label>
-                                        <input type="text" class="form-control" id="postalCode">
+                                        <input type="text" class="form-control" id="postalCode" required="Required">
                                     </div>
                                 </div>
                             </div>
