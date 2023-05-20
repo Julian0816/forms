@@ -22,24 +22,16 @@
             <!--TODO change this grid to flex so I can give the CC number a bigger input-->
             <div class="container">
                 <div class="row">
-                    <div class="col-12">
-                        <div class="mb-3">
-                            <div class="border border-danger rounded mt-3"
-                                style="background-color: rgb(245, 191, 191);">
-                                <h6 class="pt-3 px-3 pb-1 text-danger">Some fields are missing</h6>
-                            </div>
-                        </div>
-                    </div>
                     <div class="col-4">
                         <div class="mb-3">
                             <label for="cardNumber" class="form-label">Card #</label>
-                            <input type="text" class="form-control" id="cardNumber" placeholder="XXXXXXXXXXXXXXX" required="Required">
+                            <input type="number" class="form-control" id="cardNumber" placeholder="XXXXXXXXXXXXXXX" required="Required">
                         </div>
                     </div>
                     <div class="col-4">
                         <div class="mb-3">
                             <label for="cvcNumber" class="form-label">CVC #</label>
-                            <input type="text" class="form-control" id="cvcNumber" placeholder="0000" required="Required">
+                            <input type="number" class="form-control" id="cvcNumber" placeholder="0000" required="Required">
                         </div>
                     </div>
                     <div class="col-4">
@@ -47,7 +39,7 @@
                             <label for="amount" class="form-label">Amount</label>
                             <div class="d-flex">
                                 <span class="pt-2">$</span>
-                                <input type="text" class="form-control" id="amount" placeholder="Amount" required="Required">
+                                <input type="number" class="form-control" id="amount" placeholder="Amount" required="Required">
                             </div>
                         </div>
                     </div>
